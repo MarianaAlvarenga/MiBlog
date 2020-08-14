@@ -1,0 +1,427 @@
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.startBox {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    font-family: 'Monserrat', sans-serif;
+    background-image: url(../img/fotocompu2.jpg);
+    background-size: cover;
+}
+
+.startBox:after{
+
+    content: "";
+    background-position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(70%);
+
+}
+
+.startBox-nav, 
+.startBox-info{
+    display: flex;
+}
+
+.startBox-nav{
+
+    margin-right: 10%;
+    height: 10%;
+    color: #FFF;
+}
+.startBox-nav-ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+}
+.startBox-nav-ul-li{
+    color: #000;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    width: 20%;
+    height: auto;
+
+}
+
+.startBox-nav-ul-li:hover{
+   color: #AEB3B6;
+   cursor: pointer;
+}
+.startBox-info{
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.startBox-info-imageBox{
+    width: 150px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 150px;
+}
+.startBox-info-image{
+    -webkit-box-shadow: -5px 5px 5px 0px rgba(135,128,135,1);
+    -moz-box-shadow: -5px 5px 5px 0px rgba(135,128,135,1);
+    box-shadow: -5px 5px 5px 0px rgba(135,128,135,1);   
+    width: 150px;
+    height: 160px;
+    margin: 50px 0px 0px -35px;
+    transform: scale(3);
+}
+
+.startBox-info-name,
+.startBox-info-pro, 
+.startBox-info-des,
+.footerBox-tittleBox-tittle,
+.footerBox-tittleBox-subtittle{
+    color: #FFF;
+}
+
+.startBox-info-name,
+.footerBox-tittleBox-tittle{
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.startBox-info-pro{
+    margin: 5px 0 5px 0;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.startBox-info-des{
+    font-size: 18px;
+    border: 3px solid #FFF;
+    width: 340px;
+    margin: 20px 0px 20px 0px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.startBox-info-button{
+    border-radius: 20px;
+    border: none;
+    width: 216px;
+    height: 51px;
+    background: #202020;
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 680;
+    cursor: pointer;
+    font-family: 'Monserrat' sans-serif;
+    margin-bottom: 10px;
+}
+
+/*  secion aboutMe  */
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    height: 30%;
+    font-family: 'Monserrat' sans-serif;
+}
+
+.aboutMe-title {
+    margin: 0;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.aboutMe-description{
+    color: #FFF;
+    text-align: center;
+    padding: 0% 10% 0% 10%;
+    font-size: 18px;
+}
+
+/*  portfolio section    */
+.portfolio{
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.portfolio-box{
+    background-color:  #838181;
+}
+.portfolio-box-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    align-items: center;
+    font-family: 'Monserrat' sans-serif;
+}
+
+.portfolio-box-title-portfolio{
+    color: #060608;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 2%;
+}
+
+.portfolio-box-title-trabajos{
+    color: #4B4B4B;
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+.portfolio-box-images{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    padding: 5% 5% 5% 5%;
+    justify-content: center;
+    margin: auto;
+}
+
+.portfolio-box-image{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 1% 0 0 0;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+    
+}
+
+.overlay{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 1%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 90%;
+    height: auto;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: #AEB3B6;
+}
+.overlay > div >h4,
+.overlay > div >p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.overlay > div >button {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    border-radius: 20px;
+    font-family: 'Monserrat' sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.portfolio-box-images-imageBox{
+    position: relative;
+    font-family: 'Monserrat' sans-serif;
+    color: #FFF;
+}
+.portfolio-box-images-imageBox:hover .overlay{
+    opacity: 1;
+}
+
+/*  Contact section */
+.contact-box{
+    background-color: #273247;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.contact-box-titleBox{
+    font-family: 'Monserrat' sans-serif;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.contact-box-titleBox-title{
+    color: #FFF;
+    margin-bottom: 0%;
+}
+
+.contact-box-titleBox-subtitle{
+    color: #4B4B4B;
+    margin-top: 1%;
+}
+.contact-box-formBox-firstRow,
+.contact-box-formBox-secondRow{
+    display: flex;
+    align-items: center;
+
+}
+.contact-box-formBox-firstRow{
+
+justify-content: space-around;
+padding: 0% 10% 0% 10%;
+margin-bottom: 3%;
+}
+.contact-box-formBox-secondRow{
+    flex-direction: column;
+
+}
+
+.contact-box-formBox-firstRow>input,
+.contact-box-formBox-secondRow-input{
+    width: 30%;
+    font-family: 'Monserrat' sans-serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #4B4B4B;
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+.contact-box-formBox-firstRow>input:hover,
+.contact-box-formBox-secondRow-input:hover{
+    outline: none;
+    border-bottom-color: #AEB3B6;
+}
+.contact-box-formBox-firstRow>input::placeholder,
+.contact-box-formBox-secondRow-input::placeholder{
+    color: #FFF;
+
+}
+
+.contact-box-formBox-secondRow-button{
+    border-radius: 20px;
+    border: none;
+    width: 216px;
+    height: 51px;
+    background: #202020;
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 680;
+    cursor: pointer;
+    font-family: 'Monserrat' sans-serif;
+    margin-top: 3%;
+}
+
+/*  footer */
+
+footer{
+    font-family: 'Monserrat' sans-serif;
+    background-color: #4B4B4B;
+    padding: 3% 0% 3% 0%;
+}
+.footerBox{
+    text-align: center;
+}
+
+.footerBox-iconBox{
+
+    width: 100%;
+    text-align: center;
+    
+}
+
+.footerBox-iconBox a{
+
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    line-height: 50px;
+    padding: 14px 0;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.footerBox-iconBox .face{
+    background: #3b5998;
+    font-size: 24px;
+}
+.footerBox-iconBox .git{
+    background: #000;
+    font-size: 24px;
+}
+
+.footerBox-iconBox .lin{
+    background: #0077B4;
+    font-size: 24px;
+}
+.portfolio-box-images-imageBox portfolio-box-image{
+    width: 30%;
+    height: auto;
+}
+@media screen and (min-width:750px){
+    .portfolio-box-images{
+        padding-right: 1%;
+        padding-left: 1%;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .portfolio-box-images-imageBox {
+       
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 1% 1% 1% 1%;
+    }
+    .portfolio-box-image{
+
+        width: 100%;
+        height: auto;
+    }
+    .overlay{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .overlay > div >h4,
+    .overlay > div >p{
+        font-size: 24px;
+        padding: auto;
+    }
+    .startBox-nav{
+        width: 100%;
+        justify-content: space-around;
+
+    }
+    .startBox-nav-ul{
+        display: flex;
+        flex-direction: column;
+        background: black;
+        width: 100%;
+
+    }
+    .startBox-nav-ul-li{
+        color: #000;
+        transition: all 0.3s ease;
+        font-weight: 600;
+
+    }
+}
